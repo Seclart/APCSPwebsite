@@ -1,1 +1,19 @@
+.navbarCssLink{
+    background:#009c68;
+}
+.navbar-brand{
+    color:white;
+}
+.parallax {
+  /* The image used */
+  background-image: url("https://limbuscompany.wiki.gg/images/thumb/108_856463.png/1920px-108_856463.png?d52b1d");
 
+  /* Set a specific height */
+  min-height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
