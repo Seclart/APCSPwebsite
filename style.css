@@ -5,9 +5,6 @@
     color:white;
 }
 .parallax {
-  /* The image used */
-  background-image: url("https://limbuscompany.wiki.gg/images/thumb/108_856463.png/1920px-108_856463.png?d52b1d");
-
   /* Set a specific height */
   min-height: 1000px; 
 
@@ -16,4 +13,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#navbar-content > li > a:hover{
+    font-style:italic;
+}
+.page-bg *,footer *{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+#footerDivRow{
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:0px;
+    margin-right:0px;
+    background:#009c68;
+    color:white;
+}
+@media screen and (max-width:999px){
+    body{
+        background-attachment:scroll;
+    }
 }
