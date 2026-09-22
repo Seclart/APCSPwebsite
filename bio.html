@@ -15,12 +15,14 @@
         <link rel='stylesheet' type='text/css' href='style.css'>
         
         <!-- import favicon -->
-        <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/0258c843ade28bcc1a92adc834fba998">
+        <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/c987982b783b93cb16e916b6ff7ad2bf">
         
         <!-- change the title depending on the page -->
         <title>houm</title>
         
     </head>
+    
+    
     
     <body>
         
@@ -34,6 +36,10 @@
                 data-bs-toggle='dropdown'>
                     <i class="bi bi-postage-fill"></i> Select Background</button>
                 <ul class='dropdown-menu'>
+                    <li><a class='dropdown-item' onclick='editBackgroundPicture(4)'>
+                        Black</a></li>
+                    <li><a class='dropdown-item' onclick='editBackgroundPicture(5)'>
+                        White</a></li>
                     <li><a class='dropdown-item' onclick='editBackgroundPicture(0)'>
                         Dinner</a></li>
                     <li><a class='dropdown-item' onclick='editBackgroundPicture(1)'>
@@ -42,13 +48,16 @@
                         Maracas</a></li>
                     <li><a class='dropdown-item' onclick='editBackgroundPicture(3)'>
                         Onlookers</a></li>
-                    <li><a class='dropdown-item' onclick='editBackgroundPicture(4)'>
-                        Black</a></li>
-                    <li><a class='dropdown-item' onclick='editBackgroundPicture(5)'>
-                        White</a></li>
+                    <li><a class='dropdown-item' onclick='editBackgroundPicture(6)'>
+                        Night</a></li>
                     <li><a class='dropdown-item' onclick='editBackgroundPicture(2763)'>
                         Whatever!</a></li>
                 </ul>
+                
+                <!-- From Uiverse.io by KlaujonRuamni --> 
+                <button class="beautiful-button">
+                  <a href='https://www.google.com' style='color:white'>
+                      GET ME OUTTA HERE</a></button>
               
             </div>
             <ul class="nav" id='navbar-content'>
@@ -57,30 +66,45 @@
               <li><a href="index.html">Home</a></li>
               <li id="active"><a href="bio.html"><br>Bio</a></li>
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="#"><br>waewiowrogisf</a></li>
               
             </ul>
           </div>
         </nav>
         
+        
+        
         <!-- do NOT remove this div -->
         <div class='parallax page-bg' id="parallaxID" style='color:blue'>
             <div style='background-color:rgba(255,255,255,.3)'>
-                <!--
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                CONTENT HERE
-                -->
+                <div class='container'>
+                    <h1 class='text-center'>About</h1>
+                    <ul class='text-start'>
+                        <li>Grade: Junior</li>
+                        <li>Hobbies: Drawing, Games</li>
+                        <li>Fun Fact: Most of my friends are online friends</li>
+                    </ul>
+                    <div class='row'>
+                        <div class='text-center col-md-4 col-12'>
+                            <img class='projectImage' src='https://codehs.com/uploads/090c3948500b7a04bf2667516d31da36'>
+                            <h1><a style='background:rgba(255,255,255,.5)' href='https://limbuscompany.wiki.gg'>
+                                Favorite Game OAT</a></h1>
+                        </div>
+                        <div class='text-center col-md-4 col-12'>
+                            <img class='projectImage' src='https://codehs.com/uploads/eea09c009421bcf9facf5a8d08feadef'>
+                            <h1><a style='background:rgba(255,255,255,.5)' href='https://youtu.be/N2-H66oQ7zA?list=OLAK5uy_ll6Lp4hu0kd_zUTeDAUtcPSM0EKSdi3Dg'>
+                                Best Song Ever Made</a></h1>
+                        </div>
+                        <div class='text-center col-md-4 col-12'>
+                            <img class='projectImage' src='https://codehs.com/uploads/22cb92a2117d62a29a242705c6a49543'>
+                            <h1><a style='background:rgba(255,255,255,.5)' href='https://www.pictureofhotdog.com/'>
+                                Peak of Web Development</a></h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        
         
         <footer>
             <!--use col defined divs here-->
@@ -95,6 +119,9 @@
             </div>
         </footer>
     </body>
+    
+    
+    
     <script>
         var navbarElements = document.getElementById('navbar-content').children;
         var navbarElementsCount = navbarElements.length;
@@ -113,7 +140,8 @@
             'https://codehs.com/uploads/636cc86980bae6011dabd62ed1facda9',//maracaclair
             'https://codehs.com/uploads/248d6e96b8ef15332fd3cf472725a8f5',//happy mirror world
             'https://codehs.com/uploads/52fc3d48c3d4541541a13194e6248680',//black pixel
-            'https://codehs.com/uploads/188d14de6205509920bd356ecf3f1048'//white pixel
+            'https://codehs.com/uploads/188d14de6205509920bd356ecf3f1048',//white pixel
+            'https://codehs.com/uploads/b4f2c7c997888a8f8dad6a86a623f4b0'//night
             ]
         function editBackgroundPicture(backgroundSelection) {
             if (backgroundSelection==2763) {
